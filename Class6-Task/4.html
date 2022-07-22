@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber-price</title>
+    <style></style>
+</head>
+<body>
+
+    <p>Class to calculate Uber price</p>
+    <pre class="line-numbers"><code class="language-js">
+        // time = 1 for day and 2 for night
+class Uber {
+    constructor(distance,time)
+    {
+        this.distance= distance;
+        this.time = time;
+    }
+
+    getpricebysuv(n)
+    {
+        return "the suv price is "+ this.distance*this.time*n 
+    }
+    getpricebysedan(m)
+    {
+        return "the sedan price is "+ (this.distance)*(this.time)*m 
+    }
+    getpricebyauto(o)
+    {
+        return "the auto price is "+ this.distance*this.time*o
+    }
+
+    
+   
+   
+   
+}
+
+let dtb = new Uber(2,1);
+console.log(dtb.getpricebysedan(7))
+
+    </code>
+    </pre>
+    
+</body>
+</html>
